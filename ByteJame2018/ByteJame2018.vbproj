@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E9E16A4-DAC7-484C-9562-1261944AF8C6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ByteJame2018.My.MyApplication</StartupObject>
+    <RootNamespace>ByteJame2018</RootNamespace>
+    <AssemblyName>ByteJame2018</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ByteJame2018.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ByteJame2018.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Credits.Designer.vb">
+      <DependentUpon>Credits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Credits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="First Level.Designer.vb">
+      <DependentUpon>First Level.vb</DependentUpon>
+    </Compile>
+    <Compile Include="First Level.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.designer.vb">
+      <DependentUpon>Help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Form.Designer.vb">
+      <DependentUpon>Main Form.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pause.designer.vb">
+      <DependentUpon>Pause.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pause.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Credits.resx">
+      <DependentUpon>Credits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="First Level.resx">
+      <DependentUpon>First Level.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Form.resx">
+      <DependentUpon>Main Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pause.resx">
+      <DependentUpon>Pause.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KeyboardCat.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mii Channel Music.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BGfull.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChzBurger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Counter_Float.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Counter_w_Base.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Palette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\testChzBurger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window_Sill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cucumber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CatFace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puddle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1jpqv-nike-cat-memes-3.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02-cathumor.net_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\015_best-Grumpy-Cat-memes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\967adc792d6af69e3c0a567b3d9a47c0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a8d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blamedog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cat-Eating-Cake-Meme.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheez.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download344.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fat-cat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i-regret-nothing-via-9gag-com-14317524.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lazy-Cat-Meme.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seriouscat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VanillaHappyCat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cato-with-burger.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
